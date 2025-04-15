@@ -27,12 +27,14 @@ export default function CardUser({id, avatar, name, email, users, setUsers, setU
                 <Text style={styles.name}>{name}</Text>
                 <Text style={styles.email}>{email}</Text>
             </View>
-            <Pressable style={styles.trash} onPress={deleteUser}>
-                <FontAwesome name="trash-o" size={24} color="black" />
-            </Pressable>
+            <View style={styles.botoes}>
             <Pressable style={styles.edit} onPress={editUser}>
                 <FontAwesome name="edit" size={24} color="black" />
             </Pressable>
+            <Pressable style={styles.trash} onPress={deleteUser}>
+                <FontAwesome name="trash-o" size={24} color="black" />
+            </Pressable>
+            </View>
         </View>
     )
 }
@@ -66,14 +68,13 @@ const styles = StyleSheet.create({
     email: {
         color: '#999'
     },
-    trash: {
+    botoes: {
+        flex: 1,
+        flexDirection: 'column',
+        gap: 10,
+        justifyContent: 'space-between',
         position: 'absolute',
         right: 10,
-        top: 10
+        top: 10,
     },
-    edit: {
-        position: 'absolute',
-        right: 40,
-        top: 10
-    }
 })

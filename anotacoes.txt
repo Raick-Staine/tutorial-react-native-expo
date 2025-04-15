@@ -1,3 +1,11 @@
 cd ./(nome da pasta)
 npm i
 npm start
+Pression "W"
+
+///////////////////////////
+
+A pasta backup tem a página dos Usuários e dos Produtos rodando pelo App.
+
+* Para rodar o backup: Tire o arquivo escolhido da pasta "backup" e coloque na raiz do projeto.
+* mude o nome de (backupUser ou backupProduct) para "App.js"
