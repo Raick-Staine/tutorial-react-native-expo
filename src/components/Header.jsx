@@ -9,7 +9,7 @@ export default function Header(){
                 style={styles.avatar}
                 source={'https://github.com/Raick-Staine.png'}
             />
-            <Text style={styles.nome}>Renan Cavichi</Text>
+            <Text style={styles.nome}>Raick Staine</Text>
             <Entypo style={styles.menu} name="menu" size={44} color="black" />
         </View>
     )
