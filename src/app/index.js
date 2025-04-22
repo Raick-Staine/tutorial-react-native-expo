@@ -110,8 +110,12 @@ export default function HomeScreen() {
          })
         }
       </View>
-      <Link href='/create'><Text style={styles.h1}>Ir para Criar Usuário</Text></Link>
-      <Button title='Criar Usuário' onPress={() => router.push('/create')} />
+      {/* Exemplo navegação com Link */}
+      <Link href='/create' style={styles.link}><Text>Ir para Criar Usuário</Text></Link>
+      {/* Exemplo navegação com router (criado com o hook useRouter) */}
+      <Button style={styles.button} title='Criar Usuário' onPress={() => router.push('/create')} />
+
+      <Button style={styles.button} title='Ir para Home' onPress={() => router.push('/home')} />
 
       <View>
         <Text style={styles.h1}>Cadastrar</Text>
@@ -151,10 +155,22 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     margin: 10
   },
+  link: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: 10,
+    color: '#2196f3',
+    textAlign: 'center',
+    width: '100%',
+    marginBottom: 20,
+  },
   boxButtons: {
     flexDirection: 'row',
     gap: 20,
     justifyContent: 'space-around',
     marginBottom: 40
+  },
+  button: {
+    margin: 15
   }
 });
