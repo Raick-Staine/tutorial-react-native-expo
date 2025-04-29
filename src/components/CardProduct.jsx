@@ -1,6 +1,7 @@
 import { Image } from "expo-image";
 import { View, StyleSheet, Text, Pressable } from "react-native";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { useUsersStore } from "../stores/useUsersStore";
 
 export default function CardUser({ id, avatar, name, description, preco, quantidade, products, setProducts, setProductToEdit }) {
     const editProduct = async () => {
